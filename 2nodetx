@@ -23,8 +23,8 @@ Class ExampleTest(BitcoinTestFramework):
 		peer_messaging.send_message(block_message)
 
 	# logs Node 2 received the block						
-		self.nodes.sync_all( ) 
-		getdata_request = msg_getdata( )
+		self.nodes.sync_all() 
+		getdata_request = msg_getdata()
 
 if __name__ == '__main__':
     ExampleTest().main()
