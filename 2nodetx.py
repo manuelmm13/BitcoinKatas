@@ -9,13 +9,13 @@ Class ExampleTest(BitcoinTestFramework):
 
 	# start up nodes
 	def setup_network(self):
-		self.setup_nodes( )
+		self.setup_nodes()
 		self.connect_nodes(0,1)
 	
 	# node 1 mints block
 	def custom_method(self):
 	block = create_block(self.tip, self.block_time)
-		block.solve( )
+		block.solve()
 
 	# sends block to node 2
 	def run_test(self):
